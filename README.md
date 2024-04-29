@@ -25,6 +25,6 @@ To use this Lambda function, follow these steps:
 9. click on test
 
 ### Test Local
-1. docker build -t lambda_scraping .
-2. docker run -e LOCAL_EXECUTION=true -p 9000:8080 lambda_scraping:latest
+1. docker build -t lambda .
+2. docker run -e LOCAL_EXECUTION=true -p 9000:8080 lambda:latest
 3. curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"test":"test"}'
